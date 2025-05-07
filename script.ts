@@ -6,5 +6,3 @@ function formatString(input: string, toUpper?: boolean): string{
     }
 
 }
-
-console.log(formatString("hello"))
