@@ -23,11 +23,11 @@ In simple terms, suppose you have an object type, keyof extracts the names (as s
 
 Suppose a type is declared like this:
 
-``` type Person = {
+<pre>``` type Person = {
 name: string;
 age: number;
 isStudent: boolean;
-}; ```
+}; ```</pre>
 Now, if we write keyof Person, TypeScript will give us the following type:
 
 ts
