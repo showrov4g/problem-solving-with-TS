@@ -62,7 +62,7 @@ interface Product {
 }
 
 function getMostExpensiveProduct(products: Product[]): Product | null {
-    if(products.length === 0){
+    if (products.length === 0) {
         return null;
     }
     let mostExpensiveProduct = products[0];
@@ -88,15 +88,29 @@ enum Day {
     Friday,
     Saturday,
     Sunday
-  }
-  
-  function getDayType(day: Day): string{
-    if(day === Day.Saturday || day === Day.Sunday){
+}
+
+function getDayType(day: Day): string {
+    if (day === Day.Saturday || day === Day.Sunday) {
         return "Weekend";
-    }else{
+    } else {
         return "Weekday";
     }
-  }
+}
 
-console.log(getDayType(Day.Sunday))
+// ------------
+
+async function squareAsync(n: number): Promise<number> {
+    if (n < 0) {
+        throw new Error("Negative number not allowed")
+    }
+
+
+    const result = new Promise<number>((res) => {
+        setTimeout(() => {
+            res(n * n)
+        }, 1000)
+    })
+    return result;
+}
 
