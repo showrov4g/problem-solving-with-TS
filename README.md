@@ -27,7 +27,7 @@ Suppose a type is declared like this:
 name: string;
 age: number;
 isStudent: boolean;
-};
+}; ```
 Now, if we write keyof Person, TypeScript will give us the following type:
 
 ts
