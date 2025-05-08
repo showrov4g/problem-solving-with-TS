@@ -53,5 +53,3 @@ function processValue(value: string | number): number {
         return value * 2; 
     }
 }
-
-console.log(processValue("showrov kumar ghosh"))
