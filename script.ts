@@ -98,5 +98,5 @@ enum Day {
     }
   }
 
-
+console.log(getDayType(Day.Sunday))
 
