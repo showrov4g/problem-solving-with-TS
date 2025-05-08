@@ -44,7 +44,7 @@ class Car extends Vehicle {
         return (`Model: ${this.model}`)
     }
 }
-//  -------------
+
 
 function processValue(value: string | number): number {
     if (typeof value === "string") {
@@ -55,7 +55,7 @@ function processValue(value: string | number): number {
 }
 
 
-// ------------
+
 interface Product {
     name: string;
     price: number;
@@ -78,7 +78,6 @@ function getMostExpensiveProduct(products: Product[]): Product | null {
 
 
 
-// ------------------
 
 enum Day {
     Monday,
@@ -98,7 +97,7 @@ function getDayType(day: Day): string {
     }
 }
 
-// ------------
+
 
 async function squareAsync(n: number): Promise<number> {
     if (n < 0) {
