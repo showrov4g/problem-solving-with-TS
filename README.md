@@ -19,14 +19,11 @@ Keyof is a type operator that takes an object type as input and returns a union 
 
 In simple terms, suppose you have an object type, keyof extracts the names (as string literal types) of all the keys present in that type.
 
-How does keyof work?
+- How does keyof work?
 
 Suppose a type is declared like this:
 
-ts
-Copy
-Edit
-type Person = {
+``` type Person = {
 name: string;
 age: number;
 isStudent: boolean;
