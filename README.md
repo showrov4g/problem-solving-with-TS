@@ -3,23 +3,23 @@
 
 TypeScript is a type-safe language based on JavaScript that makes the coding experience of developers more precise and safe. One of the important features of TypeScript is the keyof keyword. This keyword is mainly used to extract the types of property keys that are present in a kind.
 
-In this blog, we will discuss:
+## In this blog, we will discuss:
 
-What is the keyof keyword?
+- What is the keyof keyword?
 
-How does it work?
+- How does it work?
 
-Why is it used?
+- Why is it used?
 
 An explanation with a real example.
 
-🔍 What is keyof?
+- What is keyof?
 
 Keyof is a type operator that takes an object type as input and returns a union type of the property keys present in that type.
 
 In simple terms, suppose you have an object type, keyof extracts the names (as string literal types) of all the keys present in that type.
 
-🛠️ How does keyof work?
+How does keyof work?
 
 Suppose a type is declared like this:
 
@@ -88,5 +88,5 @@ Edit
 getProperty(myCar, "color"); // ❌ Error: Argument of type '"color"' is not assignable to parameter of type '"brand" | "model" | "year"'
 Here, there is no property of type Car in type "color", so TypeScript is giving an error — that's type safety.
 
-* Conclusion
+# Conclusion
 TypeScript's keyof keyword is a powerful tool that helps developers write type-safe and bug-resistant code by extracting the key types of properties of object types. It is very useful for generic functions, utility types, and type mappings.
